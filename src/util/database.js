@@ -1,6 +1,5 @@
 import { MongoClient } from "mongodb";
-const url =
-    "mongodb+srv://admin:qwe123@cluster-apple.cthhky1.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.NEXT_PUBLIC_MONGODB_URL;
 const options = { useNewUrlParser: true };
 let connectDB;
 
